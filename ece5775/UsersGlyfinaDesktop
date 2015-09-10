@@ -1,0 +1,355 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2014.2
+  Build 932637 on Wed Jun 11 12:38:34 PM 2014
+  Copyright (C) 2014 Xilinx Inc. All rights reserved.
+================================================================
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/opt/xilinx/Vivado_HLS/2014.2/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'gsf52' on host 'amdpool-03' (Linux_x86_64 version 2.6.18-406.el5) on Mon Sep 07 20:09:46 EDT 2015
+            in directory '/home/student/gsf52/ece5775'
+@I [HLS-10] Opening and resetting project '/home/student/gsf52/ece5775/fixed_32_16_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Opening and resetting solution '/home/student/gsf52/ece5775/fixed_32_16_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.0295364
+Overall_Error_Cos = 0.0295356
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 3.96 seconds; current memory usage: 67.4 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 67.7 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 67.9 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 68.1 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-10] Opening and resetting project '/home/student/gsf52/ece5775/fixed_32_12_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Opening and resetting solution '/home/student/gsf52/ece5775/fixed_32_12_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.00292061
+Overall_Error_Cos = 0.0029014
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 4.28 seconds; current memory usage: 88.4 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 88.4 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 88.6 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 88.8 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-10] Opening and resetting project '/home/student/gsf52/ece5775/fixed_32_8_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Opening and resetting solution '/home/student/gsf52/ece5775/fixed_32_8_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.000714158
+Overall_Error_Cos = 0.00071416
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 3.83 seconds; current memory usage: 109 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 109 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 109 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 109 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-10] Opening and resetting project '/home/student/gsf52/ece5775/fixed_32_6_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Opening and resetting solution '/home/student/gsf52/ece5775/fixed_32_6_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.00102764
+Overall_Error_Cos = 0.00102764
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 4.25 seconds; current memory usage: 127 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 128 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-10] Opening and resetting project '/home/student/gsf52/ece5775/fixed_32_4_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Opening and resetting solution '/home/student/gsf52/ece5775/fixed_32_4_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.00111992
+Overall_Error_Cos = 0.00111992
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 3.9 seconds; current memory usage: 144 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 145 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-10] Creating and opening project '/home/student/gsf52/ece5775/fixed_32_2_20.prj'.
+@I [HLS-10] Adding design file 'cordic.cpp' to the project
+@I [HLS-10] Adding test bench file 'cordic_test.cpp' to the project
+@I [HLS-10] Creating and opening solution '/home/student/gsf52/ece5775/fixed_32_2_20.prj/solution1'.
+@I [HLS-10] Cleaning up the solution database.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../cordic_test.cpp in debug mode
+   Compiling ../../../../cordic.cpp in debug mode
+   Generating csim.exe
+#------------------------------------------------
+Overall_Error_Sin = 0.00114512
+Overall_Error_Cos = 0.00114512
+#------------------------------------------------
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Analyzing design file 'cordic.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:56).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:55).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:50).
+@I [XFORM-603] Inlining function 'ap_fixed_base<32, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'cordic' (cordic.cpp:49).
+@I [HLS-10] Checking synthesizability ...
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:52:5).
+@W [ANALYSIS-31] The program may have out of bound access of array variable 'angles.V' in function 'cordic' (cordic.cpp:58:5).
+@I [XFORM-401] Performing if-conversion on hyperblock from (cordic.cpp:48:8) to (cordic.cpp:47:23) in function 'cordic'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 4.59 seconds; current memory usage: 165 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'cordic' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 165 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 165 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'cordic' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'cordic/theta_V' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/s_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cordic/c_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'cordic' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'cordic'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 165 MB.
+@I [RTMG-279] Implementing memory 'cordic_angles_V_rom' using distributed ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'cordic'.
+@I [WVHDL-304] Generating RTL VHDL for 'cordic'.
+@I [WVLOG-307] Generating RTL Verilog for 'cordic'.
+@I [HLS-112] Total elapsed time: 218.536 seconds; peak memory usage: 165 MB.
+@I [LIC-101] Checked in feature [HLS]

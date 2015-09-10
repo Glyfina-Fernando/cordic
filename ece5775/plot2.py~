@@ -1,0 +1,12 @@
+from matplotlib import pyplot 
+import numpy as np
+pyplot.plot([5,10,15,20,25,30],[132,5235,5237,5237,5239,5239],'r--')
+
+pyplot.plot([5,10,15,20,25,30],[6560,6563,6563,6566,6566,6566],'g--')
+
+pyplot.plot([5,10,15,20,25,30],[362,722,1082,1442,1802,2162],'g--')
+
+pyplot.ylabel('ff,lut,latency')
+pyplot.xlabel('number of iterations')
+pyplot.show()
+
